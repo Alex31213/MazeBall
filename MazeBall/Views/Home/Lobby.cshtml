@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_Layout";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MazeBall</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/lobby.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="background-image">
+        <div class="container-lobby-rooms" id="container-lobby-rooms"></div>
+        <div id="createRoomPopup" class="popup">
+            <div class="popup-content">
+                <h3>Create Room</h3>
+                <label for="roomName">Room Name:</label>
+                <input type="text" id="roomName">
+                <button class="button" onclick="createRoom()">Create</button>
+                <button class="button" onclick="closeCreateRoomPopup()">Cancel</button>
+            </div>
+        </div>
+        <div id="buttonContainer">
+            <button class="button" onclick="openCreateRoomPopup()">Create Room</button>
+            <button class="button" onclick="leaveRoom()">Leave Room</button>
+        </div>
+    </div>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lobby.js"></script>
+</body>

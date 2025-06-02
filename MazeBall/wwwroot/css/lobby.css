@@ -1,0 +1,190 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    margin-top: 32px;
+    background-image: linear-gradient(rgba(0,0,10,0.4),rgba(0,0,10,0.4)),url(../lib/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container-lobby-rooms {
+    width: 1000px;
+    max-height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, rgba(150, 84, 49, 0.4), rgba(150, 84, 49, 0.4));
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.list-item {
+    background-color: #8B4513;
+    background-image: linear-gradient(to bottom, #a0522d, #8B4513);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-list {
+    display: flex;
+    align-items: center;
+}
+
+    .inline-list li {
+        margin-right: 10px;
+    }
+
+        .inline-list li:last-child {
+            margin-right: 0;
+        }
+
+    .inline-list img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.alt-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none;
+}
+
+    .alt-text::after {
+        content: attr(data-alt-text);
+        color: #fff;
+        opacity: 1;
+    }
+
+
+
+
+.no-rooms-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffe27f;
+}
+
+.button {
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, #fff, #ffe27f);
+    border-radius: 20px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+    .button:hover {
+        background-color: #ffe27f;
+        background-image: none;
+        text-shadow: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+#buttonContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+    .popup.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.slide-container {
+    margin-top: 20px;
+}
+
+.slide-bar {
+    width: 100%;
+}
+
+.slide-container .maxPlayersFloatRight {
+    float: right;
+}
+
+.popup-content .close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup-content p {
+    font-size: 20px;
+}

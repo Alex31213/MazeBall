@@ -1,0 +1,103 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, #fff, #ffe27f);
+    border: none;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: -1600px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -8px;
+}
+
+.navbar .user {
+    float: right;
+    padding: 10px 20px;
+    margin-top: -4px;
+}
+
+.navbar .username {
+    float: right;
+    padding-right: 10px;
+    line-height: 40px;
+}
+
+.navbar .logout {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.navbar .logout:hover {
+    background-color: #ffe27f;
+}
+
+
+.navbar .navbar-content {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+
+.navbar a {
+    float: none;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar a:hover {
+    background-image: none;
+    background-color: #ffe27f;
+}
+
+.main-content {
+    margin-top: -82px;
+}
+
+.user .loggedUserProfileImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user .loggedUserProfileImage:hover {
+    cursor: pointer;
+}

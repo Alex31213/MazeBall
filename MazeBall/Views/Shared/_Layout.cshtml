@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <span class="logo">MazeBall</span>
+            <button class="logout" id="logoutButton">Logout</button>
+            <span class="username" id="usernameNavBar"></span>
+            <div class="user">
+                <img class="loggedUserProfileImage" id="loggedUserProfileImage" alt="User Image">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/layout.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
