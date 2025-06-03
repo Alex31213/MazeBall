@@ -225,16 +225,8 @@
       "PackagePath": "staticwebassets\\lib\\images\\background.jpg"
     },
     {
-      "Id": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\images\\backgroundLobbyRoom.jpg",
-      "PackagePath": "staticwebassets\\lib\\images\\backgroundLobbyRoom.jpg"
-    },
-    {
       "Id": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\images\\board-background.jpg",
       "PackagePath": "staticwebassets\\lib\\images\\board-background.jpg"
-    },
-    {
-      "Id": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\images\\game-background.jpg",
-      "PackagePath": "staticwebassets\\lib\\images\\game-background.jpg"
     },
     {
       "Id": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

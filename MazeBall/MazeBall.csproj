@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="DefaultPhotos\" />
+    <Folder Include="Test\" />
     <Folder Include="wwwroot\lib\microsoft\" />
     <Folder Include="wwwroot\lib\images\" />
   </ItemGroup>

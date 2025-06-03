@@ -22,15 +22,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, rgba(150, 84, 49, 0.4), rgba(150, 84, 49, 0.4));
+    background: linear-gradient(45deg, rgba(70, 130, 180, 0.4), rgba(0, 102, 204, 0.4));
     padding: 20px;
     overflow-y: auto;
     border-radius: 10px;
 }
 
 .list-item {
-    background-color: #8B4513;
-    background-image: linear-gradient(to bottom, #a0522d, #8B4513);
+    background-color: #1E3A8A;
+    background-image: linear-gradient(to bottom, #3B82F6, #1E3A8A);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
@@ -52,20 +52,20 @@
     align-items: center;
 }
 
-    .inline-list li {
-        margin-right: 10px;
-    }
+.inline-list li {
+    margin-right: 10px;
+}
 
-        .inline-list li:last-child {
-            margin-right: 0;
-        }
+.inline-list li:last-child {
+    margin-right: 0;
+}
 
-    .inline-list img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 15px;
-    }
+.inline-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 
 .profile-image-container {
     position: relative;
@@ -85,14 +85,11 @@
     display: none;
 }
 
-    .alt-text::after {
-        content: attr(data-alt-text);
-        color: #fff;
-        opacity: 1;
-    }
-
-
-
+.alt-text::after {
+    content: attr(data-alt-text);
+    color: #fff;
+    opacity: 1;
+}
 
 .no-rooms-text {
     text-align: center;
@@ -121,12 +118,12 @@
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-    .button:hover {
-        background-color: #ffe27f;
-        background-image: none;
-        text-shadow: none;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    }
+.button:hover {
+    background-color: #ffe27f;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 
 #buttonContainer {
     position: fixed;
@@ -150,41 +147,19 @@
     transition: visibility 0s, opacity 0.3s;
 }
 
-    .popup.visible {
-        visibility: visible;
-        opacity: 1;
-    }
+.popup.visible {
+    visibility: visible;
+    opacity: 1;
+}
 
 .popup-content {
     position: relative;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    max-width: 400px;
-}
-
-.slide-container {
-    margin-top: 20px;
-}
-
-.slide-bar {
-    width: 100%;
-}
-
-.slide-container .maxPlayersFloatRight {
-    float: right;
+    max-width: 270px;
 }
 
 .popup-content .close-button {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.popup-content p {
-    font-size: 20px;
+    margin-right: 0px;
 }

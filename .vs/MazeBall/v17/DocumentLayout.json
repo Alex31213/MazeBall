@@ -3,100 +3,56 @@
   "WorkspaceRootPath": "E:\\Faculta\\Disertatie\\MazeBall\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\cruds\\matchresultcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\cruds\\matchresultcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\home\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\lobby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\home\\lobby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\lobby.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\lobby.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\hubs\\lobbyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\hubs\\lobbyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\controllers\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\controllers\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\lobby.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\lobby.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\cruds\\matchcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\cruds\\matchcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\cruds\\usercrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\cruds\\usercrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\entities\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\entities\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\cruds\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\cruds\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\entities\\mazeballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\entities\\mazeballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\services\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\services\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\MazeBallContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MazeBall\\Database\\MazeBallContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\models\\registerrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\models\\registerrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\dto\\responselogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\dto\\responselogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\hubs\\lobbyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\hubs\\lobbyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\lobby.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\lobby.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\lobby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\home\\lobby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,136 +62,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "game.css",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\game.css",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
-              "RelativeToolTip": "MazeBall\\wwwroot\\css\\game.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-02T13:35:00.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "lobby.css",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\lobby.css",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\lobby.css",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\lobby.css",
-              "RelativeToolTip": "MazeBall\\wwwroot\\css\\lobby.css",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAgwL4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-02T13:34:49.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MazeBall\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MazeBall\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T13:29:42.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Game.cshtml",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Game.cshtml",
-              "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Game.cshtml",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Game.cshtml",
-              "RelativeToolTip": "MazeBall\\Views\\Home\\Game.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAsAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T13:29:14.592Z",
+              "DocumentIndex": 0,
+              "Title": "MatchResultCRUD.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\MatchResultCRUD.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\CRUDs\\MatchResultCRUD.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\MatchResultCRUD.cs",
+              "RelativeToolTip": "MazeBall\\Database\\CRUDs\\MatchResultCRUD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:34:33.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "game.js",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\game.js",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\game.js",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\game.js",
-              "RelativeToolTip": "MazeBall\\wwwroot\\js\\game.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-02T13:28:48.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "lobby.js",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\lobby.js",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\lobby.js",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\lobby.js",
-              "RelativeToolTip": "MazeBall\\wwwroot\\js\\lobby.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-02T13:27:53.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Lobby.cshtml",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Lobby.cshtml",
-              "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Lobby.cshtml",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Lobby.cshtml",
-              "RelativeToolTip": "MazeBall\\Views\\Home\\Lobby.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T13:02:33.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "ICRUD.cs",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\ICRUD.cs",
               "RelativeDocumentMoniker": "MazeBall\\Database\\CRUDs\\ICRUD.cs",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\ICRUD.cs",
               "RelativeToolTip": "MazeBall\\Database\\CRUDs\\ICRUD.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:37:55.109Z",
+              "WhenOpened": "2025-06-03T11:24:03.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Program.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Program.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Program.cs",
-              "RelativeToolTip": "MazeBall\\Program.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAD0AAAAlAAAA",
+              "DocumentIndex": 3,
+              "Title": "MatchResult.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\MatchResult.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\Entities\\MatchResult.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\MatchResult.cs",
+              "RelativeToolTip": "MazeBall\\Database\\Entities\\MatchResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T10:05:33.354Z",
+              "WhenOpened": "2025-06-03T11:12:52.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Login.cshtml",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "MazeBall\\Views\\Home\\Login.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T08:42:16.854Z",
+              "DocumentIndex": 5,
+              "Title": "MazeBallContext.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\MazeBallContext.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\Entities\\MazeBallContext.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\MazeBallContext.cs",
+              "RelativeToolTip": "MazeBall\\Database\\Entities\\MazeBallContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:12:45.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\Entities\\User.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\Entities\\User.cs",
+              "RelativeToolTip": "MazeBall\\Database\\Entities\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:11:52.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MazeBallContext.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\MazeBallContext.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\MazeBallContext.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\MazeBallContext.cs",
+              "RelativeToolTip": "MazeBall\\Database\\MazeBallContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:10:51.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatchCRUD.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\MatchCRUD.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\CRUDs\\MatchCRUD.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\MatchCRUD.cs",
+              "RelativeToolTip": "MazeBall\\Database\\CRUDs\\MatchCRUD.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:51:05.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCRUD.cs",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\UserCRUD.cs",
+              "RelativeDocumentMoniker": "MazeBall\\Database\\CRUDs\\UserCRUD.cs",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\UserCRUD.cs",
+              "RelativeToolTip": "MazeBall\\Database\\CRUDs\\UserCRUD.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAcwBcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:50:38.122Z",
               "EditorCaption": ""
             },
             {
@@ -246,178 +176,57 @@
               "RelativeDocumentMoniker": "MazeBall\\Hubs\\GameHub.cs",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Hubs\\GameHub.cs",
               "RelativeToolTip": "MazeBall\\Hubs\\GameHub.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAUwCgAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:48:55.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T22:08:51.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "LobbyHub.cs",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Hubs\\LobbyHub.cs",
               "RelativeDocumentMoniker": "MazeBall\\Hubs\\LobbyHub.cs",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Hubs\\LobbyHub.cs",
               "RelativeToolTip": "MazeBall\\Hubs\\LobbyHub.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAawJEAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:48:41.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "login.js",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\login.js",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\login.js",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\login.js",
-              "RelativeToolTip": "MazeBall\\wwwroot\\js\\login.js",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAQwEUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-02T08:49:44.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "layout.js",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\layout.js",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\layout.js",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\layout.js",
-              "RelativeToolTip": "MazeBall\\wwwroot\\js\\layout.js",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAcwGoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-02T08:50:52.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T22:08:50.246Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "LobbyController.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\LobbyController.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Controllers\\LobbyController.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\LobbyController.cs",
-              "RelativeToolTip": "MazeBall\\Controllers\\LobbyController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:37:45.459Z",
-              "EditorCaption": ""
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Login.cshtml",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "MazeBall\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T21:21:10.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "lobby.css",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\lobby.css",
+              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\lobby.css",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\lobby.css",
+              "RelativeToolTip": "MazeBall\\wwwroot\\css\\lobby.css",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-02T20:51:30.298Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Controllers\\GameController.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\GameController.cs",
-              "RelativeToolTip": "MazeBall\\Controllers\\GameController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:38:05.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthentificationController.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\AuthentificationController.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Controllers\\AuthentificationController.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\AuthentificationController.cs",
-              "RelativeToolTip": "MazeBall\\Controllers\\AuthentificationController.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAAlwMYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:35:59.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserAuthorizationService.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Services\\UserAuthorizationService.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Services\\UserAuthorizationService.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Services\\UserAuthorizationService.cs",
-              "RelativeToolTip": "MazeBall\\Services\\UserAuthorizationService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:26:02.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "layout.css",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\layout.css",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\layout.css",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\layout.css",
-              "RelativeToolTip": "MazeBall\\wwwroot\\css\\layout.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-02T08:48:40.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserCRUD.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\UserCRUD.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Database\\CRUDs\\UserCRUD.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Database\\CRUDs\\UserCRUD.cs",
-              "RelativeToolTip": "MazeBall\\Database\\CRUDs\\UserCRUD.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwAcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:38:28.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "login.css",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\login.css",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\login.css",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\login.css",
-              "RelativeToolTip": "MazeBall\\wwwroot\\css\\login.css",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAIwEwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-02T08:46:25.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RegisterRequestModel.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Models\\RegisterRequestModel.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Models\\RegisterRequestModel.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Models\\RegisterRequestModel.cs",
-              "RelativeToolTip": "MazeBall\\Models\\RegisterRequestModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:57:45.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ResponseLogin.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Dto\\ResponseLogin.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Dto\\ResponseLogin.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Dto\\ResponseLogin.cs",
-              "RelativeToolTip": "MazeBall\\Dto\\ResponseLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:58:32.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MazeBall\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MazeBall\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:04:00.325Z",
-              "EditorCaption": ""
+              "Title": "Lobby.cshtml",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Lobby.cshtml",
+              "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Lobby.cshtml",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Lobby.cshtml",
+              "RelativeToolTip": "MazeBall\\Views\\Home\\Lobby.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T20:51:20.26Z"
             }
           ]
         }
