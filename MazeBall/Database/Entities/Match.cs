@@ -9,5 +9,7 @@ public partial class Match
 
     public DateTime CreationDate { get; set; }
 
+    public string RoomName { get; set; } = null!;
+
     public virtual ICollection<MatchResult> MatchResults { get; set; } = new List<MatchResult>();
 }

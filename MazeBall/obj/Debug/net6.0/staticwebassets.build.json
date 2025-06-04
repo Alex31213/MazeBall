@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F3P5Yb8Wi4tFZQI1uH0xRmT7FKTESqse41m9ktgcWeA=",
+  "Hash": "Z30kXXkwgdEPoo+oUaCymGYg+Xw373pvYBAe+TtDToc=",
   "Source": "MazeBall",
   "BasePath": "_content/MazeBall",
   "Mode": "Default",
@@ -1100,12 +1100,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\images\\background.jpg"
     },
     {
-      "Identity": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\images\\board-background.jpg",
+      "Identity": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\images\\maze-background.jpg",
       "SourceId": "MazeBall",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\",
       "BasePath": "_content/MazeBall",
-      "RelativePath": "lib/images/board-background.jpg",
+      "RelativePath": "lib/images/maze-background.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1116,7 +1116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\images\\board-background.jpg"
+      "OriginalItemSpec": "wwwroot\\lib\\images\\maze-background.jpg"
     },
     {
       "Identity": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\lib\\jquery\\dist\\jquery.js",

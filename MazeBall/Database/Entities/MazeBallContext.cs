@@ -32,6 +32,7 @@ public partial class MazeBallContext : DbContext
 
             entity.Property(e => e.MatchId).HasColumnName("MatchID");
             entity.Property(e => e.CreationDate).HasColumnType("date");
+            entity.Property(e => e.RoomName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<MatchResult>(entity =>

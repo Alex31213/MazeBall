@@ -10,6 +10,37 @@
     <link rel="stylesheet" href="~/css/game.css" asp-append-version="true" />
 </head>
 <body>
+    <div class="event-text" id="event-text">
+        Test Text!
+    </div>
+    <div class="maze-container">
+        <div class="maze">
+        </div>
+    </div>
+    <div class="player-container">
+    </div>
+    <div class="powerBar-container">
+        <input type="range" min="0" max="100" value="0" step="1" class="powerBar-range" id="powerRange" />
+    </div>
+    <div class="powerBar-value" id="powerValue">Power: 0%</div>
+    <div>
+        <div class="circle-container" id="circle">
+            <div class="dot"></div>
+            <div class="arrow" id="arrow"></div>
+        </div>
+        <div class="angle-text" id="angleText">Angle: 0°</div>
+    </div>
+    <div class="chat-container" id="chat-container">
+        <div class="message-chatContainer" id="message-chatContainer"></div>
+        <div class="input-chatContainer">
+            <input class="input-chatTextToSend" id="chatTextToSend" placeholder="Type a message..." />
+            <div class="button-sendChatText" id="sendChatText">
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <button class="chat-button disabled" id="chat-button">Open Chat</button>
+    </div>
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
