@@ -95,7 +95,6 @@ function openChatContainer() {
 $(function () {
     connection.start().then(function () {
         console.log("SignalR connection established.");
-        updateRooms();
     }).catch(function (err) {
         return console.error(err);
     });
@@ -197,6 +196,98 @@ function updatePowerValue() {
 
 powerRange.addEventListener('input', updatePowerValue);
 
+// Maze Generation
+
+var mazeMatrix;
+const cellSize = 10;
+let chosenAngle = 0;
+let chosenPower = 0;
+const maxPower = 10;
+const wallVelocity = 0.9;
+const normalVelocity = 0.97;
+const ballBounceFactor = 0.9;
+
+const maze = document.getElementById("maze");
+
+const ball1 = { x: 0, y: 0, vx: 0, vy: 0, el: null };
+const ball2 = { x: 0, y: 0, vx: 0, vy: 0, el: null };
+let activeBall = ball1;
+
+let animationRunning = true;
+let animationId;
+
+function gridToPixels(row, col) {
+    return { x: col * cellSize, y: row * cellSize };
+}
+
+function createBallElement(id) {
+    const ball = document.createElement("div");
+    ball.classList.add("ball");
+    ball.id = id;
+    ball.style.position = "absolute";
+    ball.style.width = `${cellSize}px`;
+    ball.style.height = `${cellSize}px`;
+    ball.style.borderRadius = "50%";
+    ball.style.backgroundColor = id === "ball1" ? "red" : "blue";
+    return ball;
+}
+
+function createMaze() {
+    maze.innerHTML = "";
+    maze.style.width = `${mazeMatrix[0].length * cellSize}px`;
+    maze.style.height = `${mazeMatrix.length * cellSize}px`;
+
+    for (let row = 0; row < mazeMatrix.length; row++) {
+        for (let col = 0; col < mazeMatrix[0].length; col++) {
+            const cell = document.createElement("div");
+            cell.classList.add("cell");
+            cell.style.top = `${row * cellSize}px`;
+            cell.style.left = `${col * cellSize}px`;
+            cell.style.width = `${cellSize}px`;
+            cell.style.height = `${cellSize}px`;
+
+            const value = mazeMatrix[row][col];
+            if (value === 1) cell.classList.add("wall");
+            if (value === 2) cell.classList.add("wall", "finish");
+
+            maze.appendChild(cell);
+
+            if (value === 3) {
+                const { x, y } = gridToPixels(row, col);
+                ball1.x = x;
+                ball1.y = y;
+            }
+            if (value === 4) {
+                const { x, y } = gridToPixels(row, col);
+                ball2.x = x;
+                ball2.y = y;
+            }
+        }
+    }
+
+    // Ball Creation
+    ball1.el = createBallElement("ball1");
+    maze.appendChild(ball1.el);
+    ball1.el.style.transform = `translate(${ball1.x}px, ${ball1.y}px)`;
+
+    ball2.el = createBallElement("ball2");
+    maze.appendChild(ball2.el);
+    ball2.el.style.transform = `translate(${ball2.x}px, ${ball2.y}px)`;
+}
+
+function convertToMatrix(generatedMaze) {
+    const rowKeys = Object.keys(generatedMaze).sort((a, b) => Number(a) - Number(b));
+
+    const mazeMatrix = rowKeys.map(rowKey => {
+        const rowObj = generatedMaze[rowKey];
+        const colKeys = Object.keys(rowObj).sort((a, b) => Number(a) - Number(b));
+
+        return colKeys.map(colKey => rowObj[colKey]);
+    });
+
+    return mazeMatrix;
+}
+
 connection.on('updatePlayersContainer', function (playersList) {
     updatePlayersContainer(playersList);
     console.log("PlayersContainer update received");
@@ -221,6 +312,13 @@ connection.on("updateChat", messages => {
         messageChatContainer.appendChild(spanElement);
     }
 })
+
+connection.on('generateMaze', function (generatedMaze) {
+    mazeMatrix = convertToMatrix(generatedMaze);
+    createMaze();
+    console.log("Generated Maze received");
+});
+
 
 connection.on('endGame', winnerText => {
     const gameEndBackgroundPopup = document.createElement('div');

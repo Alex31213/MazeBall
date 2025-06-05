@@ -145,7 +145,7 @@ namespace MazeBall.Hubs
             Console.WriteLine($"Game started in room {roomName}");
             await AddMatchToDatabase(roomName);
             await GetPlayersContainer(roomName);
-            await GenerateRandomMazeMatrix(roomName,mazeMatrixHeight, mazeMatrixWidth);
+            await GenerateRandomMazeMatrix(roomName, mazeMatrixHeight, mazeMatrixWidth);
         }
 
         public async Task EndTurn(string roomName)
@@ -186,7 +186,7 @@ namespace MazeBall.Hubs
             await Clients.Group(roomName).SendAsync("updateChat", RoomMessages[roomName]);
         }
 
-        private async Task GenerateRandomMazeMatrix(string roomName,int height, int width)
+        private async Task GenerateRandomMazeMatrix(string roomName, int height, int width)
         {
             int mazeWidth = (width % 2 == 0) ? width + 1 : width;
             int mazeHeight = (height % 2 == 0) ? height + 1 : height;
@@ -222,44 +222,54 @@ namespace MazeBall.Hubs
             }
             mazeWidth = mazeWidth + addedColumns;
             int newStartY = startY + addedColumns;
+            int newEndY = endY + addedColumns;
+            generatedMaze[endX][newEndY] = 2;
             generatedMaze[startX][newStartY - 1] = 0;
             generatedMaze[startX - 1][newStartY - 1] = 0;
             generatedMaze[startX - 2][newStartY - 1] = 0;
             generatedMaze[startX - 3][newStartY - 1] = 0;
-            generatedMaze[startX - 3][newStartY - 2] = 0;
+            generatedMaze[startX - 3][newStartY - 2] = 3;
             generatedMaze[startX + 1][newStartY - 1] = 0;
             generatedMaze[startX + 2][newStartY - 1] = 0;
             generatedMaze[startX + 3][newStartY - 1] = 0;
-            generatedMaze[startX + 3][newStartY - 2] = 0;
+            generatedMaze[startX + 3][newStartY - 2] = 4;
 
             //Test
-            for (int y = 0; y < generatedMaze.Count; y++)
-            {
-                for (int x = 0; x < generatedMaze[0].Count; x++)
-                {
-                    Console.Write(generatedMaze[y][x] == 1 ? "#" : " ");
-                }
-                Console.WriteLine();
-            }
+            //for (int y = 0; y < generatedMaze.Count; y++)
+            //{
+            //    for (int x = 0; x < generatedMaze[0].Count; x++)
+            //    {
+            //        Console.Write(generatedMaze[y][x] == 1 ? "#" : "");
+            //        Console.Write(generatedMaze[y][x] == 0 ? " " : "");
+            //        Console.Write(generatedMaze[y][x] == 2 ? "2" : "");
+            //        Console.Write(generatedMaze[y][x] == 3 ? "3" : "");
+            //        Console.Write(generatedMaze[y][x] == 4 ? "4" : "");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             generatedMaze = await ExpandMaze(generatedMaze, mazeExpandFactor, mazeHeight, mazeWidth);
             Console.WriteLine($"Expanded maze with factor = {mazeExpandFactor} for room {roomName}");
 
             //Test
-            Console.WriteLine();
-            for (int y = 0; y < generatedMaze.Count; y++)
-            {
-                for (int x = 0; x < generatedMaze[0].Count; x++)
-                {
-                    Console.Write(generatedMaze[y][x] == 1 ? "#" : " ");
-                }
-                Console.WriteLine();
-            }
+            //Console.WriteLine();
+            //for (int y = 0; y < generatedMaze.Count; y++)
+            //{
+            //    for (int x = 0; x < generatedMaze[0].Count; x++)
+            //    {
+            //        Console.Write(generatedMaze[y][x] == 1 ? "#" : "");
+            //        Console.Write(generatedMaze[y][x] == 0 ? " " : "");
+            //        Console.Write(generatedMaze[y][x] == 2 ? "2" : "");
+            //        Console.Write(generatedMaze[y][x] == 3 ? "3" : "");
+            //        Console.Write(generatedMaze[y][x] == 4 ? "4" : "");
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            await ConvertGeneratedMazeList(roomName,generatedMaze);
+            await ConvertGeneratedMazeList(roomName, generatedMaze);
             Console.WriteLine($"Converted maze for room {roomName}");
 
-            await Task.CompletedTask;
+            await Clients.Group(roomName).SendAsync("generateMaze", RoomMaze[roomName]);
         }
 
         private async Task GenerateMaze(List<List<int>> maze, int x, int y, int mazeHeight, int mazeWidth)
@@ -330,7 +340,18 @@ namespace MazeBall.Hubs
                     {
                         for (int dx = 0; dx < factor; dx++)
                         {
-                            expandedMaze[y * factor + dy][x * factor + dx] = maze[y][x];
+                            if (maze[y][x] == 0 || maze[y][x] == 1 || maze[y][x] == 2)
+                            {
+                                expandedMaze[y * factor + dy][x * factor + dx] = maze[y][x];
+                            }
+                            else if (maze[y][x] == 3 || maze[y][x] == 4)
+                            {
+                                expandedMaze[y * factor + dy][x * factor + dx] = 0;
+                                if (dy == 1 && dx == 1)
+                                {
+                                    expandedMaze[y * factor + dy][x * factor + dx] = maze[y][x];
+                                }
+                            }
                         }
                     }
                 }
@@ -360,6 +381,5 @@ namespace MazeBall.Hubs
 
             await Task.CompletedTask;
         }
-
     }
 }
