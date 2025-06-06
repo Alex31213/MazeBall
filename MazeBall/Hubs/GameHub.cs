@@ -12,6 +12,12 @@ namespace MazeBall.Hubs
     [Authorize]
     public class GameHub : Hub
     {
+        public class Position
+        {
+            public double X { get; set; }
+            public double Y { get; set; }
+        }
+
         private readonly IServiceScopeFactory _scopeFactory;
 
         private static readonly ConcurrentDictionary<string, string> ConnectionUserMapping =
@@ -21,8 +27,8 @@ namespace MazeBall.Hubs
         private static ConcurrentDictionary<string, string> UserRooms = new ConcurrentDictionary<string, string>();
         private static ConcurrentDictionary<string, int> RoomActivePlayers = new ConcurrentDictionary<string, int>();
         ImmutableDictionary<int, string> colors;
-        private const int mazeMatrixHeight = 20;
-        private const int mazeMatrixWidth = 20;
+        private const int mazeMatrixHeight = 16;
+        private const int mazeMatrixWidth = 16;
 
         private static ConcurrentDictionary<string, int> RoomOrderNumber = new ConcurrentDictionary<string, int>();
         private static ConcurrentDictionary<string, ConcurrentDictionary<int, string>> RoomPlayersOrder =
@@ -32,6 +38,13 @@ namespace MazeBall.Hubs
         private static ConcurrentDictionary<string, ConcurrentDictionary<int, ConcurrentDictionary<int, int>>>
             RoomMaze = new ConcurrentDictionary<string, ConcurrentDictionary<int,
                 ConcurrentDictionary<int, int>>>();
+        private static ConcurrentDictionary<string, ConcurrentDictionary<int, Position>> RoomMazeBallPositions =
+            new ConcurrentDictionary<string, ConcurrentDictionary<int, Position>>();
+        private static ConcurrentDictionary<string, int> RoomReceivedFinalPositions =
+            new ConcurrentDictionary<string, int>();
+        private static ConcurrentDictionary<string, int> RoomWinnerId = new ConcurrentDictionary<string, int>();
+        private static ConcurrentDictionary<string, int> RoomReceivedWinnerConfirmation =
+            new ConcurrentDictionary<string, int>();
 
         public GameHub(IServiceScopeFactory scopeFactory)
         {
@@ -89,6 +102,10 @@ namespace MazeBall.Hubs
                         RoomPlayersOrder.TryRemove(roomName, out _);
                         RoomOrderNumber.TryRemove(roomName, out _);
                         RoomMaze.TryRemove(roomName, out _);
+                        RoomMazeBallPositions.TryRemove(roomName, out _);
+                        RoomReceivedFinalPositions.TryRemove(roomName, out _);
+                        RoomReceivedWinnerConfirmation.TryRemove(roomName, out _);
+                        RoomWinnerId.TryRemove(roomName, out _);
                     }
                 }
             }
@@ -112,6 +129,10 @@ namespace MazeBall.Hubs
             Random random = new Random();
             List<int> availableNumbers = Enumerable.Range(1, MaxPlayers[roomName]).ToList();
             RoomMessages.TryAdd(roomName, new ConcurrentDictionary<int, string>());
+            RoomMazeBallPositions.TryAdd(roomName, new ConcurrentDictionary<int, Position>());
+            RoomReceivedFinalPositions.TryAdd(roomName, 0);
+            RoomWinnerId.TryAdd(roomName, -1);
+            RoomReceivedWinnerConfirmation.TryAdd(roomName, 0);
             RoomOrderNumber[roomName] = 1;
             foreach (var user in usernames)
             {
@@ -146,8 +167,27 @@ namespace MazeBall.Hubs
             await AddMatchToDatabase(roomName);
             await GetPlayersContainer(roomName);
             await GenerateRandomMazeMatrix(roomName, mazeMatrixHeight, mazeMatrixWidth);
+            await StartTurn(roomName);
         }
 
+        private async Task StartTurn(string roomName)
+        {
+            string currentPlayerUsername = RoomPlayersOrder[roomName][RoomOrderNumber[roomName]];
+            string eventText = $"{currentPlayerUsername} turn to take the shot!";
+            await UpdateEventText(roomName, eventText);
+            await SendTurnNotification(roomName, currentPlayerUsername);
+        }
+
+        private async Task SendTurnNotification(string roomName, string playerUsername)
+        {
+            string connectionId = ConnectionUserMapping.FirstOrDefault(pair => pair.Value == playerUsername).Key;
+            await Clients.Client(connectionId).SendAsync("startTurnButton", RoomOrderNumber[roomName]);
+        }
+
+        public async Task SendTurnActiveBallPositions(string roomName, double vx, double vy)
+        {
+            await Clients.Groups(roomName).SendAsync("moveTurnBalls", RoomOrderNumber[roomName], vx, vy);
+        }
         public async Task EndTurn(string roomName)
         {
             RoomOrderNumber[roomName]++;
@@ -155,7 +195,95 @@ namespace MazeBall.Hubs
             {
                 RoomOrderNumber[roomName] = 1;
             }
-            await Task.CompletedTask;
+            await StartTurn(roomName);
+        }
+
+        public ConcurrentDictionary<int, Position> ConvertPositionsListToConcurrent(List<List<double>> positions)
+        {
+            var concurrentDict = new ConcurrentDictionary<int, Position>();
+
+            for (int i = 0; i < positions.Count; i++)
+            {
+                var posList = positions[i];
+                if (posList.Count >= 2)
+                {
+                    var pos = new Position
+                    {
+                        X = posList[0],
+                        Y = posList[1]
+                    };
+
+                    concurrentDict.TryAdd(i, pos);
+                }
+            }
+
+            return concurrentDict;
+        }
+
+        public async Task CheckFinalPositions(string roomName, List<List<double>> positions)
+        {
+            ConcurrentDictionary<int, Position> concurrentPositions = ConvertPositionsListToConcurrent(positions);
+            RoomReceivedFinalPositions[roomName]++;
+            if (RoomReceivedFinalPositions[roomName] == 1) // First received in a player turn
+            {
+                RoomMazeBallPositions[roomName] = concurrentPositions;
+                return;
+            }
+            if (RoomReceivedFinalPositions[roomName] > 1)
+            {
+                if (RoomMazeBallPositions[roomName].Count != concurrentPositions.Count)
+                {
+                    Console.WriteLine("Error in room " + roomName + " . Received " +
+                        "ball positions between players don't match");
+                }
+
+                foreach (var kvp in RoomMazeBallPositions[roomName])
+                {
+                    if (!concurrentPositions.TryGetValue(kvp.Key, out Position pos2))
+                    {
+                        Console.WriteLine("Error in room " + roomName + " . Received " +
+                            "ball positions between players don't match");
+                    }
+
+                    var pos1 = kvp.Value;
+
+                    if (pos1.X != pos2.X || pos1.Y != pos2.Y)
+                    {
+                        Console.WriteLine("Error in room " + roomName + " . Received " +
+                            "ball positions between players don't match");
+                    }
+                }
+            }
+            if (RoomReceivedFinalPositions[roomName] == MaxPlayers[roomName])
+            {
+                RoomReceivedFinalPositions[roomName] = 0;
+                await EndTurn(roomName);
+            }
+        }
+
+        public async Task CheckVictory(string roomName, int id)
+        {
+            RoomReceivedWinnerConfirmation[roomName]++;
+            if (RoomReceivedFinalPositions[roomName] == 1)
+            {
+                RoomWinnerId[roomName] = id;
+                return;
+            }
+            if (RoomReceivedWinnerConfirmation[roomName] > 1)
+            {
+                if (RoomWinnerId[roomName] != id)
+                {
+                    Console.WriteLine("Error in room " + roomName + " . Received " +
+                        "winner's id between players don't match");
+                }
+            }
+            if (RoomReceivedWinnerConfirmation[roomName] == MaxPlayers[roomName])
+            {
+                Console.WriteLine($"{RoomPlayersOrder[roomName][id]} won the game in room {roomName}.");
+                string winnerText = $"{RoomPlayersOrder[roomName][id]} won the game. " +
+                    $"Congratulations!";
+                await Clients.Groups(roomName).SendAsync("endGame", winnerText);
+            }
         }
 
         private async Task AddMatchToDatabase(string roomName)

@@ -253,14 +253,15 @@
     width: 40px;
     height: 40px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
 }
 
 .wall {
-    background-color: #333;
+    background-color: #00001a;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #0077ff;
 }
 
-.wall.finish {
+.wallFinish {
     background-color: green;
 }
 
@@ -338,6 +339,34 @@
     height: 60px;
     text-align: center;
     z-index: 9999;
+}
+
+.turn-button {
+    width: 140px;
+    height: 140px;
+    border-radius: 50% 50% 50% 50%;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.turn-button.enabled {
+    background-image: linear-gradient(to bottom, #ff8c00, #ffa500, #ff8c00);
+    cursor: pointer;
+}
+
+.turn-button.disabled {
+    background-image: linear-gradient(to right, #e0e0e0, #b3b3b3);
 }
 
 .chat-button {

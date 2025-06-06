@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\Faculta\\Disertatie\\MazeBall\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\views\\home\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\js\\lobby.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\js\\lobby.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|e:\\faculta\\disertatie\\mazeball\\mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E1C7DE8A-B2BB-4587-85BC-244E76206F3F}|MazeBall\\MazeBall.csproj|solutionrelative:mazeball\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "game.css",
+              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
+              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\game.css",
+              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
+              "RelativeToolTip": "MazeBall\\wwwroot\\css\\game.css",
+              "ViewState": "AQIAAA0BAAAAAAAAAADgvxUBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-03T13:28:52.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "lobby.js",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\lobby.js",
               "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\lobby.js",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\lobby.js",
               "RelativeToolTip": "MazeBall\\wwwroot\\js\\lobby.js",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAQwEkAAAAiAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAgwEkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-05T18:39:34.348Z"
+              "WhenOpened": "2025-06-05T18:39:34.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Program.cs",
               "RelativeDocumentMoniker": "MazeBall\\Program.cs",
@@ -58,56 +72,44 @@
               "RelativeToolTip": "MazeBall\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T18:32:13.976Z"
+              "WhenOpened": "2025-06-05T18:32:13.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "game.js",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\game.js",
               "RelativeDocumentMoniker": "MazeBall\\wwwroot\\js\\game.js",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\js\\game.js",
               "RelativeToolTip": "MazeBall\\wwwroot\\js\\game.js",
-              "ViewState": "AQIAAG4BAAAAAAAAAAAqwNkAAAAAAAAA",
+              "ViewState": "AQIAACwCAAAAAAAAAAAowDUCAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-06-03T12:42:32.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "game.css",
-              "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
-              "RelativeDocumentMoniker": "MazeBall\\wwwroot\\css\\game.css",
-              "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\wwwroot\\css\\game.css",
-              "RelativeToolTip": "MazeBall\\wwwroot\\css\\game.css",
-              "ViewState": "AQIAAOQAAAAAAAAAAADwv+8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-03T13:28:52.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Game.cshtml",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Game.cshtml",
               "RelativeDocumentMoniker": "MazeBall\\Views\\Home\\Game.cshtml",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Views\\Home\\Game.cshtml",
               "RelativeToolTip": "MazeBall\\Views\\Home\\Game.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwA8AAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCkAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-03T13:17:52.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameHub.cs",
               "DocumentMoniker": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Hubs\\GameHub.cs",
               "RelativeDocumentMoniker": "MazeBall\\Hubs\\GameHub.cs",
               "ToolTip": "E:\\Faculta\\Disertatie\\MazeBall\\MazeBall\\Hubs\\GameHub.cs",
               "RelativeToolTip": "MazeBall\\Hubs\\GameHub.cs",
-              "ViewState": "AQIAAGwBAAAAAAAAAAAAAPgAAAAPAAAA",
+              "ViewState": "AQIAAP4AAAAAAAAAAAAtwAwBAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T22:08:51.766Z",
               "EditorCaption": ""
