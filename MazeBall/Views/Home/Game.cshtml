@@ -39,8 +39,25 @@
         </div>
     </div>
     <div class="bottom-bar">
+        <button class="help-button disabled" id="help-button">How to Play</button>
         <button class="turn-button disabled" id="turn-button">Take the Shot!</button>
         <button class="chat-button disabled" id="chat-button">Open Chat</button>
+    </div>
+    <div class="help-popup" id="help-popup">
+        <span class="close-helpButton" id="close-helpButton">X</span>
+        <div class="help-popupTitle">How to Play</div>
+        <div class="line-helpPopup">
+            <span>Choose shot power using the left bar</span>
+        </div>
+        <div class="line-helpPopup">
+            <span>Choose shot direction by choosing an angle</span>
+        </div>
+        <div class="line-helpPopup">
+            <span>Balls can collide each other</span>
+        </div>
+        <div class="line-helpPopup">
+            <span>First ball touching the green zone wins</span>
+        </div>
     </div>
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

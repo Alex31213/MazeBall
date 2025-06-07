@@ -341,6 +341,81 @@
     z-index: 9999;
 }
 
+/* Help Button */
+
+.help-button {
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    position: absolute;
+    left: 8%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.help-button.enabled {
+    background-image: linear-gradient(to bottom, #FFA500, #FFD700, #FFA500);
+    cursor: pointer;
+}
+
+.help-button.disabled {
+    background-image: linear-gradient(to right, #e0e0e0, #b3b3b3);
+}
+
+/* Help Pop-up */
+
+.help-popup {
+    display: none;
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, #fff, #ffe27f);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 280px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-helpButton {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.help-popupTitle {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.line-helpPopup {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.line-helpPopup span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Turn Button */
+
 .turn-button {
     width: 140px;
     height: 140px;
@@ -368,6 +443,8 @@
 .turn-button.disabled {
     background-image: linear-gradient(to right, #e0e0e0, #b3b3b3);
 }
+
+/* Chat Button */
 
 .chat-button {
     border-radius: 20px;

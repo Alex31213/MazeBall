@@ -3,6 +3,11 @@ const lobbyUrl = baseUrl + "/lobby";
 var finishedGame = false;
 var isRedirecting = false;
 
+const helpButtonTypes = [
+    "enabled",
+    "disabled"
+]
+
 const chatButtonTypes = [
     "enabled",
     "disabled"
@@ -83,6 +88,16 @@ var connection = new signalR.HubConnectionBuilder().withUrl(window.location.href
     accessTokenFactory: () => sessionStorage.getItem('token')
 }).build();
 
+function openHelpPopup() {
+    var popup = document.getElementById("help-popup");
+    popup.style.display = "block";
+}
+
+function closeHelpPopup() {
+    var popup = document.getElementById("help-popup");
+    popup.style.display = "none";
+}
+
 function closeChatContainer() {
     const chatContainer = document.getElementById("chat-container");
     chatContainer.style.display = "none";
@@ -103,6 +118,16 @@ $(function () {
     }).catch(function (err) {
         return console.error(err);
     });
+
+    const helpButton = document.getElementById('help-button');
+    helpButton.addEventListener('click', openHelpPopup);
+    for (var j = 0; j < helpButtonTypes.length; j++) {
+        helpButton.classList.remove(helpButtonTypes[j]);
+    }
+    helpButton.classList.add(helpButtonTypes[0]);
+
+    const closeHelpButton = document.getElementById('close-helpButton');
+    closeHelpButton.addEventListener('click', closeHelpPopup);
 
     const turnButton = document.getElementById('turn-button');
     turnButton.disabled = true;
@@ -635,6 +660,10 @@ connection.on('endGame', winnerText => {
 
     gameEndBackgroundPopup.style.visibility = 'visible';
     gameEndBackgroundPopup.style.opacity = '1';
+
+    const helpButton = document.getElementById('help-button');
+    helpButton.onclick = null;
+    closeHelpPopup();
 
     const turnButton = document.getElementById('turn-button');
     turnButton.classList.remove('enabled');
