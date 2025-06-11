@@ -74,6 +74,7 @@
     width: 100%;
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -82,11 +83,17 @@
     background: #1a2a6c;
     color: #fff;
     height: 40px;
+    margin-left: 15px;
     border-radius: 20px;
     border: 0;
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+}
+
+.button-field .g_id_signin {
+    flex-basis: 100%;
+    margin-top: 10px;
 }
 
 .button-field button.disabled {

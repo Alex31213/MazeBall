@@ -39,6 +39,13 @@ namespace MazeBall.Database.CRUDs
             List<User> users = dbContext.Users.ToList();
             return users.SingleOrDefault(x => x.Username == username);
         }
+
+        public User GetUserByEmail(string email)
+        {
+            List<User> users = dbContext.Users.ToList();
+            return users.SingleOrDefault(x => x.Email == email);
+        }
+
         public void ChangePassword(string username, string hashedNewPassword)
         {
             var users = dbContext.Users;

@@ -36,7 +36,7 @@
     justify-content: center;
     position: fixed;
     top: 20%;
-    left: 90.5%;
+    right: 0;
     transform: translateY(-50%);
     background-color: yellow;
     background-image: linear-gradient(to bottom, #ffe27f, #ffe9c4, #ffe27f);

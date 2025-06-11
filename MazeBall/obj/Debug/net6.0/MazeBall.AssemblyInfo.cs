@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MazeBall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff23345aed027ed143b13ca90081263ccfa4cce3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f0cb4ae3733c34082686c828d78f0c0bc5204d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MazeBall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MazeBall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

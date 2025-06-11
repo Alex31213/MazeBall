@@ -25,6 +25,7 @@ loginButton.onclick = function () {
         title.innerHTML = "Log In";
         registerButton.classList.add("disabled");
         loginButton.classList.remove("disabled");
+        document.querySelector('.g_id_signin').style.display = 'block';
         errorText.innerHTML = " ";
     }
     else if (!loginButton.classList.contains('disabled')) {
@@ -65,6 +66,45 @@ loginButton.onclick = function () {
     }
 }
 
+function handleLoginGoogle(response) {
+    const token = response.credential;
+
+    const payload = JSON.parse(atob(token.split('.')[1]));
+
+    var googleEmail = payload.email;
+
+    if (googleEmail == "") {
+        errorText.innerHTML = "Google Email is empty.";
+    }
+    else {
+        fetch(baseUrl + '/loginGoogle', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+            },
+            body: JSON.stringify({
+                email: googleEmail
+            })
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    return response.json().then(error => { throw error; });
+                }
+            })
+            .then(data => {
+                console.log(data);
+                sessionStorage.setItem('token', data.token);
+                window.location.replace(baseUrl + "/lobby");
+            })
+            .catch(error => {
+                console.error(error);
+                errorText.innerHTML = error;
+            });
+    }
+}
+
 registerButton.onclick = function () {
     if (registerButton.classList.contains('disabled')) {
         emailField.style.maxHeight = "65";
@@ -74,6 +114,7 @@ registerButton.onclick = function () {
         title.innerHTML = "Register";
         registerButton.classList.remove("disabled");
         loginButton.classList.add("disabled");
+        document.querySelector('.g_id_signin').style.display = 'none';
         errorText.innerHTML = " ";
     }
     else if (!registerButton.classList.contains('disabled')) {
@@ -100,6 +141,7 @@ registerButton.onclick = function () {
                         title.innerHTML = "Log In";
                         registerButton.classList.add("disabled");
                         loginButton.classList.remove("disabled");
+                        document.querySelector('.g_id_signin').style.display = 'block';
                         errorText.innerHTML = " ";
                         return response.json();
                     } else {

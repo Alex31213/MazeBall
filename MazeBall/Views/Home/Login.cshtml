@@ -44,6 +44,14 @@
                 <div class="button-field">
                     <button type="button" id="loginButton">Log In</button>
                     <button type="button" id="registerButton" class="disabled">Register</button>
+                    <div id="g_id_onload"
+                         data-client_id="241863096086-rjg6eunhrlrn846d34oj3oubo36vl8e7.apps.googleusercontent.com"
+                         data-context="signin"
+                         data-ux_mode="popup"
+                         data-callback="handleLoginGoogle"
+                         data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin" data-type="standard"></div>
                 </div>
             </form>
         </div>
@@ -51,5 +59,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="~/js/login.js"></script>
 </body>

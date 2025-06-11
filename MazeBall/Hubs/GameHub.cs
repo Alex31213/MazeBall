@@ -2,6 +2,7 @@
 using MazeBall.Database.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using System.Globalization;
@@ -30,6 +31,7 @@ namespace MazeBall.Hubs
         private const int mazeMatrixHeight = 16;
         private const int mazeMatrixWidth = 16;
 
+        private static ConcurrentDictionary<string, int> RoomMatchId = new ConcurrentDictionary<string, int>();
         private static ConcurrentDictionary<string, int> RoomOrderNumber = new ConcurrentDictionary<string, int>();
         private static ConcurrentDictionary<string, ConcurrentDictionary<int, string>> RoomPlayersOrder =
            new ConcurrentDictionary<string, ConcurrentDictionary<int, string>>();
@@ -98,6 +100,7 @@ namespace MazeBall.Hubs
                         Rooms.TryRemove(roomName, out _);
                         MaxPlayers.TryRemove(roomName, out _);
                         RoomActivePlayers.TryRemove(roomName, out _);
+                        RoomMatchId.TryRemove(roomName, out _);
                         RoomMessages.TryRemove(roomName, out _);
                         RoomPlayersOrder.TryRemove(roomName, out _);
                         RoomOrderNumber.TryRemove(roomName, out _);
@@ -128,6 +131,7 @@ namespace MazeBall.Hubs
 
             Random random = new Random();
             List<int> availableNumbers = Enumerable.Range(1, MaxPlayers[roomName]).ToList();
+            RoomMatchId.TryAdd(roomName, -1);
             RoomMessages.TryAdd(roomName, new ConcurrentDictionary<int, string>());
             RoomMazeBallPositions.TryAdd(roomName, new ConcurrentDictionary<int, Position>());
             RoomReceivedFinalPositions.TryAdd(roomName, 0);
@@ -279,6 +283,25 @@ namespace MazeBall.Hubs
             }
             if (RoomReceivedWinnerConfirmation[roomName] == MaxPlayers[roomName])
             {
+                using var scope = _scopeFactory.CreateScope();
+                var dbContext = scope.ServiceProvider.GetRequiredService<MazeBallContext>();
+                MatchResultCRUD matchResultCRUD = new MatchResultCRUD(dbContext);
+
+                foreach (var idUserPair in RoomPlayersOrder[roomName]) 
+                {
+                    var matchResultToAdd = new MatchResult
+                    {
+                        Username = idUserPair.Value,
+                        MatchId = RoomMatchId[roomName],
+                        Result = false,
+                    };
+                    if(idUserPair.Key == id)
+                    {
+                        matchResultToAdd.Result = true;
+                    }
+                    matchResultCRUD.Add(matchResultToAdd);
+                }
+
                 Console.WriteLine($"{RoomPlayersOrder[roomName][id]} won the game in room {roomName}.");
                 string winnerText = $"{RoomPlayersOrder[roomName][id]} won the game. " +
                     $"Congratulations!";
@@ -297,6 +320,7 @@ namespace MazeBall.Hubs
             };
             MatchCRUD matchCRUD = new MatchCRUD(dbContext);
             matchCRUD.Add(matchToAdd);
+            RoomMatchId[roomName]=matchToAdd.MatchId;
             Console.WriteLine($"Added match with roomName {roomName} in database");
             await Task.CompletedTask;
         }

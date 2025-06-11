@@ -35,6 +35,17 @@ namespace MazeBall.Controllers
         public ActionResult Login([FromBody] LoginRequestModel user) => LoginUser(user);
 
         /// <summary>
+        /// Verify introduced credentials in order to login User via Google
+        /// </summary>
+        /// <remarks>
+        /// Get a jwt token
+        /// </remarks>
+        /// <response code="200">User</response> 
+        [HttpPost, AllowAnonymous]
+        [Route("loginGoogle")]
+        public ActionResult LoginGoogle([FromBody] LoginGoogleRequestModel user) => LoginGoogleUser(user);
+
+        /// <summary>
         /// Logout user
         /// </summary>
         /// <remarks>
@@ -97,6 +108,25 @@ namespace MazeBall.Controllers
 
             var user_jsonWebToken = _authorization.GetToken(foundUser);
             loggedUsers.Add(user.Username);
+
+            return Ok(new ResponseLogin
+            {
+                Token = user_jsonWebToken
+            });
+        }
+
+        private ActionResult LoginGoogleUser(LoginGoogleRequestModel user)
+        {
+            UserCRUD userCRUD = new UserCRUD(dbContext);
+            var foundUser = userCRUD.GetUserByEmail(user.Email);
+            if (foundUser == null) return BadRequest("User's email not found!");
+
+            bool loggedIn = loggedUsers.Any(u => u == foundUser.Email);
+
+            if (loggedIn) return BadRequest("Already logged in");
+
+            var user_jsonWebToken = _authorization.GetToken(foundUser);
+            loggedUsers.Add(foundUser.Username);
 
             return Ok(new ResponseLogin
             {
