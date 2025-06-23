@@ -110,7 +110,7 @@ namespace MazeBall.Services
                 {
                     new Claim("username", user.Username)
                 },
-                expires: DateTime.Now.AddHours(48),
+                expires: DateTime.Now.AddHours(6),
                 signingCredentials: credentials
             );
 

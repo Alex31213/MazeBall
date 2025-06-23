@@ -200,10 +200,10 @@ var mazeMatrix;
 const cellSize = 12;
 let chosenAngle = -Math.PI / 2;
 let chosenPower = 0;
-const maxPower = 10;
-const wallVelocity = 0.9;
-const normalVelocity = 0.97;
-const ballBounceFactor = 0.9;
+const maxPower = 5;
+const wallVelocity = 0.95;
+const normalVelocity = 0.99;
+const ballBounceFactor = 0.95;
 
 const maze = document.getElementById("maze");
 
